@@ -4,39 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="header_fevicon.png">
+    <link rel="icon" type="image/x-icon" href="logo.png">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="style.css">
-    <title>FOODie - Food Like HOME</title>
+    <link rel="stylesheet" href="assets/CSS/utils.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <title>FOODie - FOOD like HOME</title>
 </head>
 <body>
     <header>
-        <a href="" class="logo" style="text-decoration:none">
-            <span style="color:red ">FOOD<span style="color:black">ie</span></span>
-        </a>
-        <div class="group">
-            <ul class="navigation">
-                <li><a href="#" class="home">Home</a></li>
-                <li><a href="#" class="menu">Menu</a></li>
-                <li><a href="#" class="gallery">Gallery</a></li>
-                <li><a href="#" class="blog">Blog</a></li>
-                <li><a href="#" class="contact">Contact</a></li>
-            </ul>
-            <div class="search">
-                <span class="icon">
-                    <i class="uil uil-search"></i>
-                    <i class="uil uil-times"></i>
-                </span>
+        <nav class="navbar flex">
+            <div class="col1 flex">
+                <span class="outer">FOOD<span class="inner">ie</span></span>
             </div>
-        </div>
-        <div class="searchbox">
-            <input type="text" placeholder="Search Here...">
-        </div>
-        <div class="user">
-            <i class="uil uil-shopping-cart-alt"></i>
-            <i class="uil uil-user"></i>
-        </div>
+            <div class="col2 flex">
+                <ul class="flex list-none nav">
+                    <li class="home">Home</li>
+                    <li class="menu">Menu</li>
+                    <li class="blog">Blog</li>
+                    <li class="about">About</li>
+                </ul>
+                <ul class="flex searchbar">
+                    <input class="search" type="text" placeholder="Search Here...">
+                    <div class="icon"><i class="uil uil-search search-icon"></i></div>
+                    <div class="cross"><i class="uil uil-times cross-icon"></i></div>
+                </ul>
+            </div>
+            <div class="col3 flex">
+                <ul class="flex list-none">
+                    <li class="bag"><i class="uil uil-shopping-bag"></i></li>
+                    <li class="profile"><i class="uil uil-user"></i></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <script src="script.js"></script>
+    <script src="assets/JS/jquery-3.6.1.min.js"></script>
+    <script src="assets/JS/script.js"></script>
+
 </body>
 </html>
