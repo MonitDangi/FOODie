@@ -4,3 +4,7 @@
 .list-none{
     list-style: none;
 }
+input{
+    caret-color: red;
+    font-weight: 600;
+}

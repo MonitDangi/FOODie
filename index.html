@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="logo.png">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link type="text/css" rel="stylesheet" href="magicscroll.css"/>
+    <script type="text/javascript" src="magicscroll.js"></script>
     <link rel="stylesheet" href="assets/CSS/utils.css">
     <link rel="stylesheet" href="assets/CSS/style.css">
     <title>FOODie - FOOD like HOME</title>
@@ -23,6 +25,8 @@
                     <li class="blog">Blog</li>
                     <li class="about">About</li>
                 </ul>
+                <i class="uil uil-bars openmenu"></i>
+                <i class="uil uil-times closemenu"></i>
                 <ul class="flex searchbar">
                     <input class="search" type="text" placeholder="Search Here...">
                     <div class="icon"><i class="uil uil-search search-icon"></i></div>
@@ -36,7 +40,29 @@
                 </ul>
             </div>
         </nav>
+        <div class="nav2">
+            <ul class="flex list-none open">
+                <li class="home">Home</li>
+                <li class="menu">Menu</li>
+                <li class="blog">Blog</li>
+                <li class="about">About</li>
+            </ul>
+        </div>
     </header>
+    <main>
+    </main>
+    <div class="offers">
+        <div class="container1">
+            <div class="MagicScroll" data-options="items: 1; gap:20px; step: 1; mode: animation; scrollOnWheel: true; draggable: true;">
+                <img src="assets/Images/foods/bt1.jpg"/>
+                <img src="assets/Images/foods/bt2.jpg"/>
+                <img src="assets/Images/foods/bt1.jpg"/>
+                <img src="assets/Images/foods/bt2.jpg"/>
+                <img src="assets/Images/foods/bt1.jpg"/>
+                <img src="assets/Images/foods/bt2.jpg"/>
+            </div>
+        </div>
+    </div>
     <script src="assets/JS/jquery-3.6.1.min.js"></script>
     <script src="assets/JS/script.js"></script>
 

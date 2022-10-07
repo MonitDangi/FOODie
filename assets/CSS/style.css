@@ -8,14 +8,21 @@ body{
     width:100vw;
     height:100vh;
     background: linear-gradient(45deg, #1c2c4b, #243b55 ,#6b84a2 45%);
+    overflow: hidden;
+    padding-top:64px;
 }
 .navbar{
+    position: fixed;
     width:100%;
     height:64px;
     align-items: center;
     background-color: #193c62;
+    z-index: 11;
+    margin-bottom: 100px;
+    top:0px;
 }
 .col1{
+    margin-left:20px;
     width:15%;
     justify-content: center;
 }
@@ -78,7 +85,7 @@ body{
     border: 2px solid black;
     outline: none;
     padding:1px 10px;
-    transition: all 1s ease-in-out ;
+    transition: all 1s ease-in-out;
 }
 .col2 .searchbar .icon{
     font-size:1.4em;
@@ -100,4 +107,101 @@ body{
 .col3 ul li{
     font-size: 1.3em;
     color:whitesmoke;
+}
+.openmenu{
+    color:whitesmoke;
+    font-size: 0;
+}
+.closemenu{
+    color:whitesmoke;
+    font-size: 0;
+}
+.nav2{
+    display: none;
+    width:0;
+    overflow: hidden;
+    background-color:#243b55;
+    transition: all 0.5s ease;
+}
+.open{
+    width:25%;
+    flex-direction: column;
+    justify-content: center;
+    margin:auto;
+}
+.open li{
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.4em;
+    color:whitesmoke;
+
+}
+
+
+.open li{
+    font-size: 1.4em;
+    color:whitesmoke;
+    position: relative;
+    text-decoration: none; 
+}
+.open li:hover {
+    color: whitesmoke;
+}
+  
+.open li::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.open li:hover::before {
+    transform: scaleX(1);
+}
+.offers{
+    width:100%;
+    height:auto;
+    background: rgb(43, 43, 43);
+    background-image: url(../Images/backgrounds/blog-pattern-bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container1{
+    width:96%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:2%;
+}
+.MagicScroll img{
+    width:700px;
+    height:480px;
+}
+.MagicScroll button{
+    display: inline-block;
+    background: white;
+}
+@media screen and (max-width:580px) {
+    .nav{
+        display: none;
+    }
+    .openmenu{
+        font-size: 1.4em;
+    }
+    .closemenu{
+        font-size: 1.4em;
+        display: none;
+    }
+}
+
+.MagicScroll a{
+    font-size: 0;
+}
+.MagicScroll{
 }
