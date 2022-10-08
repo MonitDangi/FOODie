@@ -6,9 +6,11 @@
 }
 body{
     width:100vw;
-    height:5000px;
+    height:auto;
     background: linear-gradient(45deg, #edeff5, #acbcce ,#6a7f99 45%);
     padding-top:64px;
+    background: #161e2c;
+    background-image: url(../Images/backgrounds/blog-pattern-bg.png);
 }
 .navbar{
     position: fixed;
@@ -30,6 +32,7 @@ body{
     color:red;
     font-weight: 700;
     letter-spacing: 0.1em;
+    margin-left:10px;
 }
 .inner{
     color:black;
@@ -117,8 +120,9 @@ body{
 }
 .nav2{
     display: none;
-    position:absolute;
+    position: fixed;
     width:0;
+    height:100%;
     overflow: hidden;
     background-color:#243b55;
     transition: all 0.5s ease;
@@ -168,14 +172,14 @@ body{
     position:relative;
     width:100%;
     height:auto;
-    background: rgb(195, 194, 194);
-    background-image: url(../Images/backgrounds/blog-pattern-bg.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .container1{
     width:100%;
     height: 340px;
+    background: #161e2c;
+    background-image: url(../Images/backgrounds/blog-pattern-bg.png);
 }
 .carousel .carousel-cell img{
     width:96%;
@@ -183,6 +187,97 @@ body{
     border:2px solid grey;
     margin-top:10px;
     margin-left:2%;
+}
+.categories{
+    width:100%;
+    height:300px;
+    padding-top:30px;
+    background: #161e2c#161e2c;
+    background-image: url(../Images/backgrounds/blog-pattern-bg.png);
+}
+.categories .carousel{
+    width:100%;
+    height:90%;
+}
+.categories .carousel span{
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.categories .carousel .chef{
+    width:240px;
+    height:240px;
+    border-radius: 240px;
+    margin-left:auto;
+    margin-right:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url("../Images/categories/chef/c2.jpg");
+}
+.categories .carousel .chef span{
+    font-size:80px;
+    font-weight: 700;
+    color:white;
+}
+ .categories .carousel .restaurant{
+    width:240px;
+    height:240px;
+    border-radius:240px;
+    margin:0 30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url("../Images/categories/restaurant/res-1.jpg");
+}
+.categories .carousel .restaurant span{
+    font-size:28px;
+    font-weight: 700;
+    color:white;
+}
+.categories .carousel .zones{
+    width:240px;
+    height:240px;
+    border-radius: 240px;
+    margin:0 30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url("../Images/categories/zones/place-1.jpg");
+}
+.categories .carousel .zones span{
+    font-size:60px;
+    font-weight: 700;
+    color:white;
+}
+.categories .carousel .dish{
+    width:240px;
+    height:240px;
+    border-radius: 240px;
+    margin:0 30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url("../Images/categories/dish/blog3.jpg");
+}
+.categories .carousel .dish span{
+    font-size:80px;
+    font-weight: 700;
+    color:white;
+}
+.categories .carousel .brands{
+    width:240px;
+    height:240px;
+    border-radius: 240px;
+    margin:0 30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url("../Images/categories/brands/b4.png");
+}
+.categories .carousel .brands span{
+    font-size:50px;
+    font-weight: 700;
+    color:white;
 }
 .recommended{
     width:100%;
@@ -198,7 +293,7 @@ body{
     text-transform: uppercase;
     font-weight: 700;
     font-size:35px;
-    color:whitesmoke;
+    color:white;
 }
 .recommended .recommended-dishes {
     padding-left:-20%;
@@ -215,9 +310,8 @@ body{
 .box2{
     width:300px;
     height:300px;
-    background-color: black;
+    background-color: #161e2c;
 }
-
 @media screen and (max-width:580px) {
     .nav{
         display: none;
@@ -229,4 +323,24 @@ body{
         font-size: 1.4em;
         display: none;
     }
+    .col3{
+        display: none;
+    }
+    .bag{
+        justify-content: center;
+        gap:5px;
+    }
+    .profile{
+        justify-content: center;
+        gap:5px;
+    }
+    
+}
+.flickity-viewport{
+    background: #161e2c;
+    background-image: url(../Images/backgrounds/blog-pattern-bg.png);
+}
+.flickity-page-dots{
+    background: #161e2c;
+    background-image: url(../Images/backgrounds/blog-pattern-bg.png);
 }
