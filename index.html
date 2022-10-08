@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="logo.png">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link type="text/css" rel="stylesheet" href="magicscroll.css"/>
-    <script type="text/javascript" src="magicscroll.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="assets/CSS/utils.css">
     <link rel="stylesheet" href="assets/CSS/style.css">
     <title>FOODie - FOOD like HOME</title>
@@ -50,20 +49,31 @@
         </div>
     </header>
     <main>
-    </main>
-    <div class="offers">
-        <div class="container1">
-            <div class="MagicScroll" data-options="items: 1; gap:20px; step: 1; mode: animation; scrollOnWheel: true; draggable: true;">
-                <img src="assets/Images/foods/bt1.jpg"/>
-                <img src="assets/Images/foods/bt2.jpg"/>
-                <img src="assets/Images/foods/bt1.jpg"/>
-                <img src="assets/Images/foods/bt2.jpg"/>
-                <img src="assets/Images/foods/bt1.jpg"/>
-                <img src="assets/Images/foods/bt2.jpg"/>
+        <div class="offers">
+            <div class="container1">
+                <div class="carousel" data-flickity ='{"freeScroll": true, "wrapAround":true,"autoPlay": true}'>
+                    <div class="carousel-cell">
+                        <img src="assets/Images/foods/scrolling-img-1.png" alt="Paneer Roll"> 
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="assets/Images/foods/scrolling-img-1.png" alt="Paneer Roll"> 
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="recommended">
+            <span>Recommended Dishes</span>
+        </div>
+        <div class="recommended-dishes">
+            <div class="carousel" data-flickity='{ "groupCells": 2 }'>
+                <div class="carousel-cell">
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="assets/JS/jquery-3.6.1.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="assets/JS/script.js"></script>
 
 </body>

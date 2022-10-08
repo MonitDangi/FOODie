@@ -6,9 +6,8 @@
 }
 body{
     width:100vw;
-    height:100vh;
-    background: linear-gradient(45deg, #1c2c4b, #243b55 ,#6b84a2 45%);
-    overflow: hidden;
+    height:5000px;
+    background: linear-gradient(45deg, #edeff5, #acbcce ,#6a7f99 45%);
     padding-top:64px;
 }
 .navbar{
@@ -118,10 +117,12 @@ body{
 }
 .nav2{
     display: none;
+    position:absolute;
     width:0;
     overflow: hidden;
     background-color:#243b55;
     transition: all 0.5s ease;
+    z-index: 9;
 }
 .open{
     width:25%;
@@ -164,29 +165,59 @@ body{
     transform: scaleX(1);
 }
 .offers{
+    position:relative;
     width:100%;
     height:auto;
-    background: rgb(43, 43, 43);
+    background: rgb(195, 194, 194);
     background-image: url(../Images/backgrounds/blog-pattern-bg.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .container1{
+    width:100%;
+    height: 340px;
+}
+.carousel .carousel-cell img{
     width:96%;
-    height: 500px;
+    height:300px;
+    border:2px solid grey;
+    margin-top:10px;
+    margin-left:2%;
+}
+.recommended{
+    width:100%;
+    height:70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left:2%;
+    background-color: #193c62;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-.MagicScroll img{
-    width:700px;
-    height:480px;
+.recommended span{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:35px;
+    color:whitesmoke;
 }
-.MagicScroll button{
-    display: inline-block;
-    background: white;
+.recommended .recommended-dishes {
+    padding-left:-20%;
 }
+
+.carousel-cell{
+    margin-right:50px;
+}
+.box{
+    width:300px;
+    height:300px;
+    background-color: red;
+}
+.box2{
+    width:300px;
+    height:300px;
+    background-color: black;
+}
+
 @media screen and (max-width:580px) {
     .nav{
         display: none;
@@ -198,10 +229,4 @@ body{
         font-size: 1.4em;
         display: none;
     }
-}
-
-.MagicScroll a{
-    font-size: 0;
-}
-.MagicScroll{
 }
