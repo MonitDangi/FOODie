@@ -9,20 +9,23 @@ body{
     height:auto;
     background: linear-gradient(45deg, #edeff5, #acbcce ,#6a7f99 45%);
     padding-top:64px;
-    background: #161e2c;
+    background: rgb(225,225,226);
     background-image: url(../Images/backgrounds/blog-pattern-bg.png);
 }
 .navbar{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: fixed;
     width:100%;
     height:64px;
     align-items: center;
-    background-color: #193c62;
+    background-color: whitesmoke;
     z-index: 11;
     margin-bottom: 100px;
     top:0px;
+    box-shadow: 0px 0px 20px 0px black;
 }
 .col1{
+    font-family:cursive;
     margin-left:20px;
     width:15%;
     justify-content: center;
@@ -40,7 +43,7 @@ body{
 .col2{
     width:70%;
     justify-content: right;
-    gap:20px;
+    gap:5px;
 }
 .col2{
     transition: all 0.5s ease;
@@ -51,12 +54,12 @@ body{
 }
 .col2 ul li{
     font-size: 1.4em;
-    color:whitesmoke;
+    color:rgb(8, 8, 8);
     position: relative;
     text-decoration: none; 
 }
 .col2 ul li:hover {
-    color: whitesmoke;
+    color: rgb(4, 4, 4);
 }
   
 .col2 ul li::before {
@@ -84,19 +87,19 @@ body{
     width:0px;
     height:125%;
     border-radius: 30px;
-    border: 2px solid black;
+    border: 2px solid red;
     outline: none;
     padding:1px 10px;
     transition: all 1s ease-in-out;
 }
 .col2 .searchbar .icon{
     font-size:1.4em;
-    color:whitesmoke;
+    color:black;
 }
 .col2 .searchbar .cross{
     display: none;
-    font-size:1.4em;
-    color:whitesmoke;
+    font-size:1.4rem;
+    color:red;
 }
 .col3{
     width:15%;
@@ -108,14 +111,14 @@ body{
 }
 .col3 ul li{
     font-size: 1.3em;
-    color:whitesmoke;
+    color:black;
 }
 .openmenu{
-    color:whitesmoke;
+    color:black;
     font-size: 0;
 }
 .closemenu{
-    color:whitesmoke;
+    color:black;
     font-size: 0;
 }
 .nav2{
@@ -124,7 +127,7 @@ body{
     width:0;
     height:100%;
     overflow: hidden;
-    background-color:#243b55;
+    background-color:whitesmoke;
     transition: all 0.5s ease;
     z-index: 9;
 }
@@ -135,22 +138,13 @@ body{
     margin:auto;
 }
 .open li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     line-height: 40px;
     font-size: 1.4em;
-    color:whitesmoke;
-
-}
-
-
-.open li{
-    font-size: 1.4em;
-    color:whitesmoke;
+    color:black;
     position: relative;
     text-decoration: none; 
-}
-.open li:hover {
-    color: whitesmoke;
 }
   
 .open li::before {
@@ -178,7 +172,7 @@ body{
 .container1{
     width:100%;
     height: 340px;
-    background: #161e2c;
+    background-color: rgb(225,225,226);
     background-image: url(../Images/backgrounds/blog-pattern-bg.png);
 }
 .carousel .carousel-cell img{
@@ -188,12 +182,29 @@ body{
     margin-top:10px;
     margin-left:2%;
 }
+.categories-heading{
+    width:auto;
+    justify-content: center;
+    height:70px;
+    align-items: center;
+    background:rgb(201, 201, 201);
+}
+.categories-heading span{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:35px;
+    color:res;
+}
 .categories{
     width:100%;
     height:300px;
     padding-top:30px;
-    background: #161e2c#161e2c;
+    background: rgb(225,225,226);
+    border-right:4px solid rgb(201, 201, 201);
+    border-left:4px solid rgb(201, 201, 201);
     background-image: url(../Images/backgrounds/blog-pattern-bg.png);
+    -webkit-box-shadow: 1px 8px 41px 6px rgba(0,0,0,0.47); 
+    box-shadow: 1px 8px 11px 6px rgba(0,0,0,0.47);
 }
 .categories .carousel{
     width:100%;
@@ -207,7 +218,7 @@ body{
     width:240px;
     height:240px;
     border-radius: 240px;
-    margin-left:auto;
+    margin-left:50px;
     margin-right:30px;
     display:flex;
     justify-content:center;
@@ -279,49 +290,54 @@ body{
     font-weight: 700;
     color:white;
 }
-.recommended{
+.recommended-heading{
     width:100%;
     height:70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #193c62;
+    background-color: rgb(201,201,201);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    -webkit-box-shadow: 1px 8px 41px 6px rgba(0,0,0,0.47); 
+    box-shadow: 1px 8px 11px 6px rgba(0,0,0,0.47);
 }
-.recommended span{
+.recommended-heading span{
     text-transform: uppercase;
     font-weight: 700;
     font-size:35px;
-    color:white;
+    color:black;
 }
-.recommended .recommended-dishes {
+.recommended-heading .recommended-dishes {
     padding-left:-20%;
 }
-
 .carousel-cell{
     margin-right:50px;
-}
-.box{
-    width:300px;
-    height:300px;
-    background-color: red;
-}
-.box2{
-    width:300px;
-    height:300px;
-    background-color: #161e2c;
 }
 @media screen and (max-width:580px) {
     .nav{
         display: none;
     }
     .openmenu{
-        font-size: 1.4em;
+        font-size: 1.4rem;
+    }
+    .search{
+        margin-right:-20px;
     }
     .closemenu{
-        font-size: 1.4em;
+        font-size: 1.4rem;
+        color:black;
         display: none;
+    }
+    .container1{
+        height:270px;
+    } 
+    .flickity-enabled.is-draggable .flickity-viewport {
+        height:225px;
+    }
+
+    .carousel .carousel-cell img{
+        height:245px;
     }
     .col3{
         display: none;
@@ -337,10 +353,10 @@ body{
     
 }
 .flickity-viewport{
-    background: #161e2c;
+    background: rgb(225, 225, 226);
     background-image: url(../Images/backgrounds/blog-pattern-bg.png);
 }
 .flickity-page-dots{
-    background: #161e2c;
+    background: rgb(225, 225, 226);
     background-image: url(../Images/backgrounds/blog-pattern-bg.png);
 }
