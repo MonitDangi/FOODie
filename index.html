@@ -12,169 +12,204 @@
     <title>FOODie - FOOD like HOME</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar flex">
-            <div class="col1 flex">
-                <span class="outer">FOOD<span class="inner">ie</span></span>
+    <div class="note">LOGIN</div>
+    <div class="loginPage flex">
+        <div class="flex">
+            <div  class="form" >
+                <div class="info flex">
+                    <div class="name flex">
+                        <span class="spName"> Full Name</span>
+                        <input class="inName" type="text" required>
+                    </div>
+                    <div class="email flex">
+                        <span class="spEmail"> Email</span>
+                        <input class="inEmail" type="email" required>
+                    </div>
+                    <button type="button" class="button">Get OTP</button>
+                </div>
+                <div class="otp">
+                    <div class="enterOtp flex">
+                        <span class="spOTP">OTP</span>
+                        <input class="inOTP" type="text" required>
+                    </div>
+                </div>
+                <button class="submit">Submit</button>
+                <div class="skip">
+                    <span>Skip</span>
+                </div>
             </div>
-            <div class="col2 flex">
-                <ul class="flex list-none nav">
+            <script src="assets/JS/jquery-3.6.1.min.js"></script>
+            <script src="assets/JS/mainpage.js"></script>
+        </div>
+    </div>
+    <div class="mainpage">
+        <header class="header">
+            <nav class="navbar flex">
+                <div class="col1 flex">
+                    <span class="outer">FOOD<span class="inner">ie</span></span>
+                </div>
+                <div class="col2 flex">
+                    <ul class="flex list-none nav">
+                        <li class="home">Home</li>
+                        <li class="menu">Menu</li>
+                        <li class="blog">Blog</li>
+                        <li class="about">About</li>
+                    </ul>
+                    <i class="uil uil-bars openmenu"></i>
+                    <i class="uil uil-times closemenu"></i>
+                    <ul class="flex searchbar">
+                        <input class="search" type="text" placeholder="Search Here...">
+                        <div class="icon"><i class="uil uil-search search-icon"></i></div>
+                        <div class="cross"><i class="uil uil-times cross-icon"></i></div>
+                    </ul>
+                </div>
+                <div class="col3 flex">
+                    <ul class="flex list-none">
+                        <li class="bag"><i class="uil uil-shopping-bag"></i></li>
+                        <li class="profile"><i class="uil uil-user"></i></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nav2">
+                <ul class="flex list-none open">
                     <li class="home">Home</li>
                     <li class="menu">Menu</li>
                     <li class="blog">Blog</li>
                     <li class="about">About</li>
-                </ul>
-                <i class="uil uil-bars openmenu"></i>
-                <i class="uil uil-times closemenu"></i>
-                <ul class="flex searchbar">
-                    <input class="search" type="text" placeholder="Search Here...">
-                    <div class="icon"><i class="uil uil-search search-icon"></i></div>
-                    <div class="cross"><i class="uil uil-times cross-icon"></i></div>
+                    <li class="bag flex">Bag <i class="uil uil-shopping-bag"></i></li>
+                    <li class="profile flex">Profile <i class="uil uil-user"></i></li>
                 </ul>
             </div>
-            <div class="col3 flex">
-                <ul class="flex list-none">
-                    <li class="bag"><i class="uil uil-shopping-bag"></i></li>
-                    <li class="profile"><i class="uil uil-user"></i></li>
-                </ul>
+        </header>
+        <main>
+            <div class="offers">
+                <div class="container1">
+                    <div class="carousel" data-flickity ='{"freeScroll": true, "wrapAround":true,"autoPlay": true}'>
+                        <div class="carousel-cell">
+                            <img src="assets/Images/foods/1.gif" alt="error">
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="assets/Images/foods/2.gif" alt="error">
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="assets/Images/foods/3.gif" alt="error">
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="assets/Images/foods/4.gif" alt="error">
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="assets/Images/foods/5.gif" alt="error">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
-        <div class="nav2">
-            <ul class="flex list-none open">
-                <li class="home">Home</li>
-                <li class="menu">Menu</li>
-                <li class="blog">Blog</li>
-                <li class="about">About</li>
-                <li class="bag flex">Bag <i class="uil uil-shopping-bag"></i></li>
-                <li class="profile flex">Profile <i class="uil uil-user"></i></li>
-            </ul>
-        </div>
-    </header>
-    <main>
-        <div class="offers">
-            <div class="container1">
-                <div class="carousel" data-flickity ='{"freeScroll": true, "wrapAround":true,"autoPlay": true}'>
+            <div class="categories-heading flex">
+                <span>Recommended Dishes</span>
+            </div>
+            <div class="categories">
+                <div class="carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
                     <div class="carousel-cell">
-                        <img src="assets/Images/foods/1.gif" alt="error">
+                        <div class="chef">
+                            <span>Chef</span>
+                        </div>
                     </div>
                     <div class="carousel-cell">
-                        <img src="assets/Images/foods/2.gif" alt="error">
+                        <div class="restaurant">
+                            <span>Restaurant</span>
+                        </div>
                     </div>
                     <div class="carousel-cell">
-                        <img src="assets/Images/foods/3.gif" alt="error">
+                        <div class="zones">
+                            <span>Zone</span>
+                        </div>
                     </div>
                     <div class="carousel-cell">
-                        <img src="assets/Images/foods/4.gif" alt="error">
+                        <div class="dish">
+                            <span>Dish</span>
+                        </div>
                     </div>
                     <div class="carousel-cell">
-                        <img src="assets/Images/foods/5.gif" alt="error">
+                        <div class="brands">
+                            <span>Brand</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="categories-heading flex">
-            <span>Recommended Dishes</span>
-        </div>
-        <div class="categories">
-            <div class="carousel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
-                <div class="carousel-cell">
-                    <div class="chef">
-                        <span>Chef</span>
+            <div class="recommended-heading flex">
+                <span>Recommended Dishes</span>
+            </div>
+            <div class="recommended-dishes flex">
+                <div class="box">
+                    <div class="image">
+                        <img loading="lazy" src="assets/Images/recommended/1.avif" alt="Pizza">
+                    </div>
+                    <div class="detail flex">
+                        <div class="name"><h3>Chicago Bites Pizzeria</h3></div>
+                        <div class="star">3.6<i class="uil uil-star"></i></div>
+                    </div>
+                    <div class="remdetail flex">
+                        <div class="rest">Pizza Hut</div>
+                        <div class="price">₹200/1p</div>
                     </div>
                 </div>
-                <div class="carousel-cell">
-                    <div class="restaurant">
-                        <span>Restaurant</span>
+                <div class="box">
+                    <div class="image">
+                        <img loading="lazy" src="assets/Images/recommended/1.avif" alt="Pizza">
+                    </div>
+                    <div class="detail flex">
+                        <div class="name"><h3>Chicago Bites Pizzeria</h3></div>
+                        <div class="star">3.6<i class="uil uil-star"></i></div>
+                    </div>
+                    <div class="remdetail flex">
+                        <div class="rest">Pizza Hut</div>
+                        <div class="price">₹200/1p</div>
                     </div>
                 </div>
-                <div class="carousel-cell">
-                    <div class="zones">
-                        <span>Zone</span>
+                <div class="box">
+                    <div class="image">
+                        <img loading="lazy" src="assets/Images/recommended/1.avif" alt="Pizza">
+                    </div>
+                    <div class="detail flex">
+                        <div class="name"><h3>Chicago Bites Pizzeria</h3></div>
+                        <div class="star">3.6<i class="uil uil-star"></i></div>
+                    </div>
+                    <div class="remdetail flex">
+                        <div class="rest">Pizza Hut</div>
+                        <div class="price">₹200/1p</div>
                     </div>
                 </div>
-                <div class="carousel-cell">
-                    <div class="dish">
-                        <span>Dish</span>
+                <div class="box">
+                    <div class="image">
+                        <img loading="lazy" src="assets/Images/recommended/1.avif" alt="Pizza">
+                    </div>
+                    <div class="detail flex">
+                        <div class="name"><h3>Chicago Bites Pizzeria</h3></div>
+                        <div class="star">3.6<i class="uil uil-star"></i></div>
+                    </div>
+                    <div class="remdetail flex">
+                        <div class="rest">Pizza Hut</div>
+                        <div class="price">₹200/1p</div>
                     </div>
                 </div>
-                <div class="carousel-cell">
-                    <div class="brands">
-                        <span>Brand</span>
+                <div class="box">
+                    <div class="image">
+                        <img loading="lazy" src="assets/Images/recommended/1.avif" alt="Pizza">
+                    </div>
+                    <div class="detail flex">
+                        <div class="name"><h3>Chicago Bites Pizzeria</h3></div>
+                        <div class="star">3.6<i class="uil uil-star"></i></div>
+                    </div>
+                    <div class="remdetail flex">
+                        <div class="rest">Pizza Hut</div>
+                        <div class="price">₹200/1p</div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="recommended-heading flex">
-            <span>Recommended Dishes</span>
-        </div>
-        <div class="recommended-dishes flex">
-            <div class="box">
-                <div class="image">
-                    <img loading="lazy" src="assets/Images/recommended/1.avif" alt="Pizza">
-                </div>
-                <div class="detail flex">
-                    <div class="name"><h3>Chicago Bites Pizzeria</h3></div>
-                    <div class="star">3.6<i class="uil uil-star"></i></div>
-                </div>
-                <div class="remdetail flex">
-                    <div class="rest">Pizza Hut</div>
-                    <div class="price">₹200/1p</div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img loading="lazy" src="assets/Images/recommended/1.avif" alt="Pizza">
-                </div>
-                <div class="detail flex">
-                    <div class="name"><h3>Chicago Bites Pizzeria</h3></div>
-                    <div class="star">3.6<i class="uil uil-star"></i></div>
-                </div>
-                <div class="remdetail flex">
-                    <div class="rest">Pizza Hut</div>
-                    <div class="price">₹200/1p</div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img loading="lazy" src="assets/Images/recommended/1.avif" alt="Pizza">
-                </div>
-                <div class="detail flex">
-                    <div class="name"><h3>Chicago Bites Pizzeria</h3></div>
-                    <div class="star">3.6<i class="uil uil-star"></i></div>
-                </div>
-                <div class="remdetail flex">
-                    <div class="rest">Pizza Hut</div>
-                    <div class="price">₹200/1p</div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img loading="lazy" src="assets/Images/recommended/1.avif" alt="Pizza">
-                </div>
-                <div class="detail flex">
-                    <div class="name"><h3>Chicago Bites Pizzeria</h3></div>
-                    <div class="star">3.6<i class="uil uil-star"></i></div>
-                </div>
-                <div class="remdetail flex">
-                    <div class="rest">Pizza Hut</div>
-                    <div class="price">₹200/1p</div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img loading="lazy" src="assets/Images/recommended/1.avif" alt="Pizza">
-                </div>
-                <div class="detail flex">
-                    <div class="name"><h3>Chicago Bites Pizzeria</h3></div>
-                    <div class="star">3.6<i class="uil uil-star"></i></div>
-                </div>
-                <div class="remdetail flex">
-                    <div class="rest">Pizza Hut</div>
-                    <div class="price">₹200/1p</div>
-                </div>
-            </div>
-        </div>
-    </main>
+            <span class="username"></span>
+            <span class="useremail"></span>
+        </main>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="assets/JS/jquery-3.6.1.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="assets/JS/script.js"></script>

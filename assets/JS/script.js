@@ -1,3 +1,94 @@
+// login page
+var getOTP = $(".button");
+var divOTP = $(".otp");
+let submit = $(".submit");
+var username;
+var email
+let sendOTP;
+let x =0;
+function generateOTP(){
+    var digits = "0123456789";
+    let OTP ='';
+    for(let i=0;i<6;i++){
+        OTP += digits[Math.floor(Math.random()*10)];
+    }
+    return OTP;
+}
+function validation(email){
+    var pattern = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
+    if(email.match(pattern)){
+        console.log("True");
+        return true;
+    }
+    console.log("False");
+    return false;
+}
+
+getOTP.click(()=>{
+    username = $(".inName").val();
+    email = $(".inEmail").val();
+    if(!username){
+        window.alert("Enter Username");
+        return ;
+    }
+    if(!email){
+        window.alert("Enter Email");
+        return ;
+    }
+    var check = validation(email);
+    if(!check){
+        window.alert("Enter Valid Email Address");
+        return;
+    }
+    getOTP.hide();
+    divOTP.show();
+    divOTP.width('314px')
+    divOTP.height('30px');
+    submit.show();
+    sendOTP = generateOTP();
+    var esub = "One Tine Password for FOODie login."
+    console.log(email);
+
+
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "foodie2562@gmail.com",
+        Password : "214E0FA5181E0B020D4FC1764FD41E597F35",
+        To : email,
+        From : "foodie2562@gmail.com",
+        Subject : esub, 
+        Body : "Your OTP is "+ sendOTP +". Dont share it with anyone."
+    }).then(
+      message => {
+        if(message == "OK"){
+            alert("OTP Sent.")
+            console.log(sendOTP);
+        }
+        else {
+            alert("There is an error at sending message");
+        }
+      }
+    );
+})
+
+submit.click(()=>{
+    var enteredOTP = $(".inOTP").val();
+    if(enteredOTP != sendOTP){
+        window.alert("Enter valid OTP.")
+    }
+    else{
+        $(".note").hide();
+        $(".header").show();
+        $(".loginPage").hide();
+        $(".mainpage").width('100%');
+        $(".mainpage").height('auto');
+    }
+
+})
+
+
+
+//mainpage
 var nav = $(".nav");
 var search = $(".search");
 var icon = $(".icon");
