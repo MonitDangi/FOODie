@@ -9,7 +9,7 @@
 
 body{
 width:100vw;
-height:auto;
+height:100vh;
 background: linear-gradient(45deg, #edeff5, #acbcce ,#6a7f99 45%);
 padding-top:64px;
 background: rgb(225,225,226);
@@ -38,6 +38,8 @@ span{
     background-image: linear-gradient(#f35285, #f74444 75%);
     align-items: center;
     justify-content: center;
+    z-index:15;
+    position:fixed;
 }
 .form{
     width:340px;
@@ -162,9 +164,9 @@ input{
 
 
 .mainpage{
-    height:0px;
-    width:0px;
-    overflow: hidden;;
+    width:100vw;
+    height:auto;
+    overflow: hidden;
 }
 header{
     display: none;

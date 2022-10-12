@@ -1,4 +1,3 @@
-// login page
 var getOTP = $(".button");
 var divOTP = $(".otp");
 let submit = $(".submit");
@@ -80,8 +79,8 @@ submit.click(()=>{
         $(".note").hide();
         $(".header").show();
         $(".loginPage").hide();
-        $(".mainpage").width('100%');
-        $(".mainpage").height('auto');
+        $(".body").height('auto');
+        $(".body").scroll();
     }
 
 })
