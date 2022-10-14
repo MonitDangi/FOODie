@@ -43,6 +43,7 @@ getOTP.click(()=>{
     divOTP.show();
     divOTP.width('314px')
     divOTP.height('30px');
+    $(".check").show();
     submit.show();
     sendOTP = generateOTP();
     var esub = "One Tine Password for FOODie login."
@@ -52,7 +53,7 @@ getOTP.click(()=>{
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "foodie2562@gmail.com",
-        Password : "214E0FA5181E0B020D4FC1764FD41E597F35",
+        Password : "1944AEA57DDCDC6D41AFA92CB372DF217EAE",
         To : email,
         From : "foodie2562@gmail.com",
         Subject : esub, 
@@ -64,7 +65,8 @@ getOTP.click(()=>{
             console.log(sendOTP);
         }
         else {
-            alert("There is an error at sending message");
+            alert(message);
+            alert(sendOTP);
         }
       }
     );

@@ -9,21 +9,25 @@
 
 body{
 width:100vw;
-height:100vh;
+height:0;
 background: linear-gradient(45deg, #edeff5, #acbcce ,#6a7f99 45%);
 padding-top:64px;
 background: rgb(225,225,226);
 background-image: url(../Images/backgrounds/blog-pattern-bg.png);
+animation: all 3s ease-in-out;
 }
 
 
 .note{
+    position: fixed;
     width:100%;
     text-align: center;
     font-size: 1.5em;
     color:black;
     line-height: 64px;
     margin-top:-64px;
+    background-color: rgb(187, 186, 186);
+    z-index: 16;
 }
 .flex{
     display: flex;
@@ -34,6 +38,7 @@ span{
 }
 .loginPage{
     width:100vw;
+    margin-top:-64px;
     height: 100vh;
     background-image: linear-gradient(#f35285, #f74444 75%);
     align-items: center;
@@ -58,10 +63,22 @@ input{
     padding:0 5px;
     letter-spacing: 0.05em;
     max-width: 206px;
+    caret-color: red;
 }
 .info{
     flex-direction: column;
     gap:20px;
+}
+.check{
+    display: none;
+    text-align: center;
+    color: red;
+    margin-top:5px;
+    font-weight: 600;
+}
+.spam{
+    color:black;
+    font-size:1.2rem;
 }
 .button{
     width:130px;
@@ -199,6 +216,10 @@ header{
 .inner{
     color:black;
 }
+.outer:hover{
+    filter: drop-shadow(2px 2px 1px rgb(248, 4, 4));
+    transform: scale(1.05);
+}
 .col2{
     width:70%;
     justify-content: right;
@@ -271,6 +292,10 @@ header{
 .col3 ul li{
     font-size: 1.3em;
     color:black;
+}
+.col3 ul li:hover{
+    filter: drop-shadow(2px 2px 1px rgb(248, 4, 4));
+    transform: scale(1.05);
 }
 .openmenu{
     color:black;
@@ -363,6 +388,11 @@ header{
     font-weight: 700;
     font-size:35px;
     color:res;
+    transition: all 0.5s ease-in;
+}
+.categories-heading span:hover{
+    filter: drop-shadow(2px 2px 1px rgb(248, 4, 4));
+    transform: scale(1.05);
 }
 .categories{
     width:100%;
@@ -382,32 +412,35 @@ header{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .categories .carousel .chef{
-    width:230px;
-    height:230px;
+    width:220px;
+    height:220px;
     border-radius: 240px;
     margin-left:50px;
     margin-right:30px;
-    margin-top:5px;
+    margin-top:10px;
     display:flex;
     justify-content:center;
     align-items:center;
     background-image: url("../Images/categories/chef/c2.jpg");
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgb(252, 3, 3);
 }
 .categories .carousel .chef span{
-    font-size:80px;
+    font-size:70px;
     font-weight: 700;
     color:white;
 }
  .categories .carousel .restaurant{
-    width:240px;
-    height:240px;
+    width:220px;
+    height:220px;
     border-radius:240px;
-    margin:0 30px;
+    margin-left:50px;
+    margin-right:30px;
+    margin-top:10px;
     display:flex;
     justify-content:center;
     align-items:center;
     background-image: url("../Images/categories/restaurant/res-1.jpg");
+    box-shadow: 0 0 10px rgb(252, 3, 3);
 }
 .categories .carousel .restaurant span{
     font-size:28px;
@@ -415,14 +448,17 @@ header{
     color:white;
 }
 .categories .carousel .zones{
-    width:240px;
-    height:240px;
+    width:220px;
+    height:220px;
     border-radius: 240px;
-    margin:0 30px;
+    margin-left:50px;
+    margin-right:30px;
+    margin-top:10px;
     display:flex;
     justify-content:center;
     align-items:center;
-    background-image: url("../Images/categories/zones/place-1.jpg");
+    background-image: url("../Images/categories/zones/place-1.png");
+    box-shadow: 0 0 10px rgb(252, 3, 3);
 }
 .categories .carousel .zones span{
     font-size:60px;
@@ -430,14 +466,17 @@ header{
     color:white;
 }
 .categories .carousel .dish{
-    width:240px;
-    height:240px;
+    width:220px;
+    height:220px;
     border-radius: 240px;
-    margin:0 30px;
+    margin-left:50px;
+    margin-right:30px;
+    margin-top:10px;
     display:flex;
     justify-content:center;
     align-items:center;
     background-image: url("../Images/categories/dish/blog3.jpg");
+    box-shadow: 0 0 10px rgb(252, 3, 3);
 }
 .categories .carousel .dish span{
     font-size:80px;
@@ -445,14 +484,17 @@ header{
     color:white;
 }
 .categories .carousel .brands{
-    width:240px;
-    height:240px;
+    width:220px;
+    height:220px;
     border-radius: 240px;
-    margin:0 30px;
+    margin-left:50px;
+    margin-right:30px;
+    margin-top:10px;
     display:flex;
     justify-content:center;
     align-items:center;
     background-image: url("../Images/categories/brands/b4.png");
+    box-shadow: 0 0 10px rgb(252, 3, 3);
 }
 .categories .carousel .brands span{
     font-size:50px;
@@ -475,6 +517,11 @@ header{
     font-weight: 700;
     font-size:35px;
     color:black;
+    transition: all 0.5s ease-out;
+}
+.recommended-heading span:hover{
+    filter: drop-shadow(2px 2px 1px rgb(248, 4, 4));
+    transform: scale(1.05);
 }
 .carousel-cell{
     margin-right:50px;
