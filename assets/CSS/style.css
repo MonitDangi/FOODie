@@ -1,3 +1,4 @@
+
 *
 {
     padding:0px;
@@ -15,6 +16,10 @@ padding-top:64px;
 background: rgb(225,225,226);
 background-image: url(../Images/backgrounds/blog-pattern-bg.png);
 animation: all 3s ease-in-out;
+padding-bottom:500px;
+}
+body::-webkit-scrollbar {
+    display: none; 
 }
 
 
@@ -215,7 +220,9 @@ header{
 }
 .inner{
     color:black;
+    filter: drop-shadow(1px 1px 0.5px rgb(251, 130, 130));
 }
+
 .outer:hover{
     filter: drop-shadow(2px 2px 1px rgb(248, 4, 4));
     transform: scale(1.05);
@@ -532,7 +539,10 @@ header{
     padding-top:50px;
     gap:80px;
     max-height:770px;
-    overflow-x:scroll;
+    overflow-y: scroll;
+}
+.recommended-dishes::-webkit-scrollbar{
+    display: none;
 }
 .recommended-dishes .box{
     width:330px;
@@ -607,6 +617,85 @@ header{
     }
     
 }
+.food-categories{
+    margin-top:25px;
+    width:100%;
+    height:70px;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(201,201,201);;
+}
+
+.food-categories .tabs{
+    width:350px;
+    margin:auto;
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0  1px 0 rgba(#185ee0,0.15),0 6px 12px 0 rgba(#185ee0,0.15);
+    padding:0.75rem;
+    border-radius: 99px;
+    justify-content: space-around;
+    gap:10px;
+}
+.food-categories .tabs .tab{
+    z-index:2;
+}
+.food-categories .tabs input[type="radio"]{
+    display: none;
+}
+.food-categories .tabs .tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:40px;
+    width: 100px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 99px;
+    cursor: pointer;
+    transition:all 0.15s ease-in;
+}
+.notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:1.5rem;
+    height:1.5rem;
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    background-color: #e6eef9;
+    transition: all 0.15s ease-in;
+}
+.food-categories .tabs input:checked + label{
+    color:#fff;
+}
+.food-categories .tabs input:checked label > .notification{
+    background-color: #e6eef9;
+    color:#fff;
+}
+.food-categories .tabs input[id="radio-1"]:checked ~ .glider{
+    transform: translateX(-100%);
+}
+.food-categories .tabs input[id="radio-2"]:checked ~ .glider{
+    transform: translateX(0);
+}
+.food-categories .tabs input[id="radio-3"]:checked ~ .glider{
+    transform: translateX(100%);
+}
+.glider{
+    position:absolute;
+    display: flex;
+    height:40px;
+    width:115px;
+    background-color: #185ee5;
+    z-index: 1;
+    border-radius: 99px;
+    transition: all 0.25s ease-out;
+}
+
 @media screen and (min-width:581px) {
     .container1{
         height: 340px;

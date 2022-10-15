@@ -50,26 +50,27 @@ getOTP.click(()=>{
     console.log(email);
 
 
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "foodie2562@gmail.com",
-        Password : "1944AEA57DDCDC6D41AFA92CB372DF217EAE",
-        To : email,
-        From : "foodie2562@gmail.com",
-        Subject : esub, 
-        Body : "Your OTP is "+ sendOTP +". Dont share it with anyone."
-    }).then(
-      message => {
-        if(message == "OK"){
-            alert("OTP Sent.")
-            console.log(sendOTP);
-        }
-        else {
-            alert(message);
-            alert(sendOTP);
-        }
-      }
-    );
+    // Email.send({
+    //     Host : "smtp.elasticemail.com",
+    //     Username : "foodie2562@gmail.com",
+    //     Password : "1944AEA57DDCDC6D41AFA92CB372DF217EAE",
+    //     To : email,
+    //     From : "foodie2562@gmail.com",
+    //     Subject : esub, 
+    //     Body : "Your OTP is "+ sendOTP +". Dont share it with anyone."
+    // }).then(
+    //   message => {
+    //     if(message == "OK"){
+    //         alert("OTP Sent.")
+    //         console.log(sendOTP);
+    //     }
+    //     else {
+    //         alert(message);
+    //         alert(sendOTP);
+    //     }
+    //   }
+    // );
+    console.log(sendOTP);
 })
 
 submit.click(()=>{
