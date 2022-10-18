@@ -429,7 +429,7 @@ header{
     justify-content:center;
     align-items:center;
     background-image: url("../Images/categories/chef/c2.jpg");
-    box-shadow: 0 0 10px rgb(252, 3, 3);
+    box-shadow: 0 0 10px rgb(61, 61, 61);
 }
 .categories .carousel .chef span{
     font-size:70px;
@@ -447,7 +447,7 @@ header{
     justify-content:center;
     align-items:center;
     background-image: url("../Images/categories/restaurant/res-1.jpg");
-    box-shadow: 0 0 10px rgb(252, 3, 3);
+    box-shadow: 0 0 10px rgb(61, 61, 61);
 }
 .categories .carousel .restaurant span{
     font-size:28px;
@@ -465,7 +465,7 @@ header{
     justify-content:center;
     align-items:center;
     background-image: url("../Images/categories/zones/place-1.png");
-    box-shadow: 0 0 10px rgb(252, 3, 3);
+    box-shadow: 0 0 10px rgb(61, 61, 61);
 }
 .categories .carousel .zones span{
     font-size:60px;
@@ -483,7 +483,7 @@ header{
     justify-content:center;
     align-items:center;
     background-image: url("../Images/categories/dish/blog3.jpg");
-    box-shadow: 0 0 10px rgb(252, 3, 3);
+    box-shadow: 0 0 10px rgb(61, 61, 61);
 }
 .categories .carousel .dish span{
     font-size:80px;
@@ -501,7 +501,7 @@ header{
     justify-content:center;
     align-items:center;
     background-image: url("../Images/categories/brands/b4.png");
-    box-shadow: 0 0 10px rgb(252, 3, 3);
+    box-shadow: 0 0 10px rgb(61, 61, 61);
 }
 .categories .carousel .brands span{
     font-size:50px;
@@ -634,7 +634,7 @@ header{
     display: flex;
     position: relative;
     background-color: #fff;
-    box-shadow: 0 0  1px 0 rgba(#185ee0,0.15),0 6px 12px 0 rgba(#185ee0,0.15);
+    box-shadow: 0 0  1px 0 rgba(#464647,0.15),0 6px 12px 0 rgba(#4d4d4e,0.15);
     padding:0.75rem;
     border-radius: 99px;
     justify-content: space-around;
@@ -690,7 +690,7 @@ header{
     display: flex;
     height:40px;
     width:115px;
-    background-color: #185ee5;
+    background-color: #404041;
     z-index: 1;
     border-radius: 99px;
     transition: all 0.25s ease-out;

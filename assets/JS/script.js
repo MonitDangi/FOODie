@@ -133,4 +133,7 @@ var MagicScrollOptions = {
     items: 1,
     step: 1,
     draggable: true
-    };
+};
+let v = 0;
+v = $(".recommended-dishes").children('div').length;
+$(".quantity").text(v);
