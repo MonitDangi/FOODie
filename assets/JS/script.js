@@ -137,3 +137,5 @@ var MagicScrollOptions = {
 let v = 0;
 v = $(".recommended-dishes").children('div').length;
 $(".quantity").text(v);
+
+

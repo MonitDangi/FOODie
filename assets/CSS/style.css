@@ -540,6 +540,7 @@ header{
     gap:80px;
     max-height:770px;
     overflow-y: scroll;
+    padding-bottom:25px;
 }
 .recommended-dishes::-webkit-scrollbar{
     display: none;
@@ -618,14 +619,16 @@ header{
     
 }
 .food-categories{
-    margin-top:25px;
     width:100%;
     height:70px;
     position:absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(201,201,201);;
+    background-color: rgb(201,201,201);
+    -webkit-box-shadow: 1px 8px 41px 6px rgba(0,0,0,0.47); 
+    box-shadow: 1px 8px 11px 6px rgba(0,0,0,0.47);
+    z-index:5;
 }
 
 .food-categories .tabs{
@@ -639,6 +642,7 @@ header{
     border-radius: 99px;
     justify-content: space-around;
     gap:10px;
+    
 }
 .food-categories .tabs .tab{
     z-index:2;
@@ -670,11 +674,12 @@ header{
     transition: all 0.15s ease-in;
 }
 .food-categories .tabs input:checked + label{
-    color:#fff;
+    color:rgb(255, 0, 0);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .food-categories .tabs input:checked label > .notification{
     background-color: #e6eef9;
-    color:#fff;
+    color:green;
 }
 .food-categories .tabs input[id="radio-1"]:checked ~ .glider{
     transform: translateX(-100%);
@@ -690,7 +695,7 @@ header{
     display: flex;
     height:40px;
     width:115px;
-    background-color: #404041;
+    background-color: #7d7d7d;
     z-index: 1;
     border-radius: 99px;
     transition: all 0.25s ease-out;
@@ -717,4 +722,160 @@ header{
 .flickity-page-dots{
     background: rgb(225, 225, 226);
     background-image: url(../Images/backgrounds/blog-pattern-bg.png);
+}
+
+
+
+
+
+.indian-food{
+    margin-top:64px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top:50px;
+    gap:80px;
+    max-height:770px;
+    overflow-y: scroll;
+    padding-bottom:25px;
+    z-index:0;
+    position:absolute;
+    background-color: rgb(225,225,226);
+}
+.indian-food::-webkit-scrollbar{
+    display: none;
+}
+.indian-food .box{
+    width:330px;
+    height:300px;
+    overflow: hidden;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding:5px;
+    border:1px solid red;
+    box-shadow: 0 0 10px rgba(249, 1, 1, 0.3);
+}
+.indian-food .box .image{
+    width:100%;
+    height:70%;
+}
+.indian-food .box .image img{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+}
+.indian-food .box .detail{
+    justify-content: space-between;
+    margin:10px 0 0 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+.indian-food .box .remdetail{
+    justify-content: space-between;
+    margin:5px 0 0 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+.healthy-food{
+    margin-top:64px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top:50px;
+    gap:80px;
+    max-height:770px;
+    overflow-y: scroll;
+    padding-bottom:25px;
+    z-index:2;
+    position:absolute;
+    background-color: rgb(225,225,226);
+}
+.healthy-food::-webkit-scrollbar{
+    display: none;
+}
+.healthy-food .box{
+    width:330px;
+    height:300px;
+    overflow: hidden;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding:5px;
+    border:1px solid red;
+    box-shadow: 0 0 10px rgba(249, 1, 1, 0.3);
+}
+.healthy-food .box .image{
+    width:100%;
+    height:70%;
+}
+.healthy-food .box .image img{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+}
+.healthy-food .box .detail{
+    justify-content: space-between;
+    margin:10px 0 0 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+.healthy-food .box .remdetail{
+    justify-content: space-between;
+    margin:5px 0 0 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+
+
+.foreign-food{
+    margin-top:64px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top:50px;
+    gap:80px;
+    max-height:770px;
+    overflow-y: scroll;
+    padding-bottom:25px;
+    z-index:0;
+    position:absolute;
+    background-color: rgb(225,225,226);
+}
+.foreign-food::-webkit-scrollbar{
+    display: none;
+}
+.foreign-food .box{
+    width:330px;
+    height:300px;
+    overflow: hidden;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding:5px;
+    border:1px solid red;
+    box-shadow: 0 0 10px rgba(249, 1, 1, 0.3);
+}
+.foreign-food .box .image{
+    width:100%;
+    height:70%;
+}
+.foreign-food .box .image img{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+}
+.foreign-food .box .detail{
+    justify-content: space-between;
+    margin:10px 0 0 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+.foreign-food .box .remdetail{
+    justify-content: space-between;
+    margin:5px 0 0 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.1em;
 }
