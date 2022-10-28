@@ -139,3 +139,33 @@ v = $(".recommended-dishes").children('div').length;
 $(".quantity").text(v);
 
 
+
+var indian_count = 0;
+var healthy_count = 0;
+var foreign_count = 0;
+indian_count = $(".indian-food").children('div').length;
+healthy_count = $(".healthy-food").children('div').length;
+foreign_count = $(".foreign-food").children('div').length;
+$('.indian').text(indian_count);
+$('.healthy').text(healthy_count);
+$('.foreign').text(foreign_count);
+
+
+$('.indian-container').click(()=>{
+    $('.indian-food').show();
+    $('.healthy-food').hide();
+    $('.foreign-food').hide();
+
+});
+$('.healthy-container').click(()=>{
+    $('.healthy-food').show();
+    $('.indian-food').hide();
+    $('.foreign-food').hide();
+
+});
+$('.foreign-container').click(()=>{
+    $('.foreign-food').show();
+    $('.indian-food').hide();
+    $('.healthy-food').hide();
+
+});

@@ -672,6 +672,7 @@ header{
     border-radius: 50%;
     background-color: #e6eef9;
     transition: all 0.15s ease-in;
+    color:green;
 }
 .food-categories .tabs input:checked + label{
     color:rgb(255, 0, 0);
@@ -695,7 +696,7 @@ header{
     display: flex;
     height:40px;
     width:115px;
-    background-color: #7d7d7d;
+    background-color: #a6a6a6;
     z-index: 1;
     border-radius: 99px;
     transition: all 0.25s ease-out;
