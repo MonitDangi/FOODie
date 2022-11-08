@@ -1,8 +1,8 @@
 var getOTP = $(".button");
 var divOTP = $(".otp");
 let submit = $(".submit");
-var username;
-var email
+var username="user101";
+var email="noemail"
 let sendOTP;
 let x =0;
 function generateOTP(){
@@ -50,26 +50,26 @@ getOTP.click(()=>{
     console.log(email);
 
 
-    // Email.send({
-    //     Host : "smtp.elasticemail.com",
-    //     Username : "foodie2562@gmail.com",
-    //     Password : "1944AEA57DDCDC6D41AFA92CB372DF217EAE",
-    //     To : email,
-    //     From : "foodie2562@gmail.com",
-    //     Subject : esub, 
-    //     Body : "Your OTP is "+ sendOTP +". Dont share it with anyone."
-    // }).then(
-    //   message => {
-    //     if(message == "OK"){
-    //         alert("OTP Sent.")
-    //         console.log(sendOTP);
-    //     }
-    //     else {
-    //         alert(message);
-    //         alert(sendOTP);
-    //     }
-    //   }
-    // );
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "foodie2562@gmail.com",
+        Password : "1944AEA57DDCDC6D41AFA92CB372DF217EAE",
+        To : email,
+        From : "foodie2562@gmail.com",
+        Subject : esub, 
+        Body : "Your OTP is "+ sendOTP +". Dont share it with anyone."
+    }).then(
+      message => {
+        if(message == "OK"){
+            alert("OTP Sent.")
+            console.log(sendOTP);
+        }
+        else {
+            alert(message);
+            alert(sendOTP);
+        }
+      }
+    );
     console.log(sendOTP);
 })
 
@@ -87,7 +87,13 @@ submit.click(()=>{
     }
 
 })
-
+$('.skip').click(()=>{
+    $(".note").hide();
+    $(".header").show();
+    $(".loginPage").hide();
+    $(".body").height('auto');
+    $(".body").scroll();
+})
 
 
 //mainpage
@@ -169,3 +175,6 @@ $('.foreign-container').click(()=>{
     $('.healthy-food').hide();
 
 });
+$('.link').click(()=>{
+    window.alert("Launching it soon")
+})

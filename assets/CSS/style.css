@@ -519,6 +519,9 @@ header{
     -webkit-box-shadow: 1px 8px 41px 6px rgba(0,0,0,0.47); 
     box-shadow: 1px 8px 11px 6px rgba(0,0,0,0.47);
 }
+.recommended-heading .quantity{
+    color:red;
+}
 .recommended-heading span{
     text-transform: uppercase;
     font-weight: 700;
