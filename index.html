@@ -43,11 +43,13 @@
             </div>
         </div>
     </div>
+    <div class="userprofile">
+        <div class="username flex"><span><i class="uil uil-user"></i>Name</span><span class="putName"></span></div>
+        <div class="useremail flex"><span><i class="uil uil-envelope-alt"></i>Email</span><span class="putEmail"></span></div>
+        <img src="assets/Images/userimage.png" alt="userimage"><br>
+        <i class="uil uil-times" id="cut"></i>
+    </div>
     <div class="mainpage">
-        <!-- <div class="profile">
-            <div class="username flex"><span>Name</span><span class="putName"></span></div>
-            <div class="useremail flex"><span>Email</span><span class="putEmail"></span></div>
-        </div> -->
         <header class="header">
             <nav class="navbar flex">
                 <div class="col1 flex">
@@ -55,8 +57,8 @@
                 </div>
                 <div class="col2 flex">
                     <ul class="flex list-none nav">
-                        <li class="home link">Home</li>
-                        <li class="menu link">Menu</li>
+                        <li class="home"><a href="#">Home</a></li>
+                        <li class="menu"><a href="#1">Menu</a></li>
                         <li class="blog link">Blog</li>
                         <li class="about link">About</li>
                     </ul>
@@ -210,7 +212,7 @@
                     </div>
                 </div>
             </div>
-            <div class="food-categories">
+            <div class="food-categories" id="1">
                 <div class="tabs">
                     <input type="radio" id="radio-1" name="tabs">
                     <label class="tab indian-container" for="radio-1">Indian<span class="notification indian"></span></label>
@@ -221,7 +223,7 @@
                     <span class="glider"></span>
                 </div>
             </div>
-            <div class="indian-food flex">
+            <div class="indian-food flex" >
                 <div class="box link">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/Indian-foods/chicken1.png" alt="Pizza">

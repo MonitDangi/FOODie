@@ -83,7 +83,10 @@ submit.click(()=>{
         $(".header").show();
         $(".loginPage").hide();
         $(".body").height('auto');
+        $(".putName").text(username);
+        $(".putEmail").text(email);
         $(".body").scroll();
+        $('body').css("overflow","scroll");
     }
 
 })
@@ -93,6 +96,10 @@ $('.skip').click(()=>{
     $(".loginPage").hide();
     $(".body").height('auto');
     $(".body").scroll();
+    $('body').css("overflow","scroll");
+    $(".putName").text(username);
+    $(".putEmail").text(email);
+
 })
 
 
@@ -177,4 +184,9 @@ $('.foreign-container').click(()=>{
 });
 $('.link').click(()=>{
     window.alert("Launching it soon")
+})
+$('.profile').click(()=>{
+    $(".userprofile").show();
+    $(".mainpage").addClass('blur');
+    $('body').css("overflow","hidden");
 })
