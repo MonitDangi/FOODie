@@ -555,7 +555,7 @@ header{
 .recommended-dishes::-webkit-scrollbar{
     display: none;
 }
-.recommended-dishes .box{
+ .box{
     width:330px;
     height:300px;
     overflow: hidden;
@@ -565,23 +565,23 @@ header{
     border:1px solid red;
     box-shadow: 0 0 10px rgba(249, 1, 1, 0.3);
 }
-.recommended-dishes .box .image{
+.box .image{
     width:100%;
     height:70%;
 }
-.recommended-dishes .box .image img{
+.box .image img{
     width:100%;
     height:100%;
     border-radius:10px;
 }
-.recommended-dishes .box .detail{
+.box .detail{
     justify-content: space-between;
     margin:10px 0 0 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
     letter-spacing: 0.1em;
 }
-.recommended-dishes .box .remdetail{
+.box .remdetail{
     justify-content: space-between;
     margin:5px 0 0 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

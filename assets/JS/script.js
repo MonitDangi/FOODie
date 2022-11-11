@@ -50,26 +50,26 @@ getOTP.click(()=>{
     console.log(email);
 
 
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "foodie2562@gmail.com",
-        Password : "1944AEA57DDCDC6D41AFA92CB372DF217EAE",
-        To : email,
-        From : "foodie2562@gmail.com",
-        Subject : esub, 
-        Body : "Your OTP is "+ sendOTP +". Dont share it with anyone."
-    }).then(
-      message => {
-        if(message == "OK"){
-            alert("OTP Sent.")
-            console.log(sendOTP);
-        }
-        else {
-            alert(message);
-            alert(sendOTP);
-        }
-      }
-    );
+//     Email.send({
+//         Host : "smtp.elasticemail.com",
+//         Username : "foodie2562@gmail.com",
+//         Password : "1944AEA57DDCDC6D41AFA92CB372DF217EAE",
+//         To : email,
+//         From : "foodie2562@gmail.com",
+//         Subject : esub, 
+//         Body : "Your OTP is "+ sendOTP +". Dont share it with anyone."
+//     }).then(
+//       message => {
+//         if(message == "OK"){
+//             alert("OTP Sent.")
+//             console.log(sendOTP);
+//         }
+//         else {
+//             alert(message);
+//             alert(sendOTP);
+//         }
+//       }
+//     );
     console.log(sendOTP);
 })
 
@@ -189,4 +189,15 @@ $('.profile').click(()=>{
     $(".userprofile").show();
     $(".mainpage").addClass('blur');
     $('body').css("overflow","hidden");
+})
+$('#cut').click(()=>{
+    $(".userprofile").hide();
+    $(".mainpage").removeClass('blur');
+    $('body').css("overflow","scroll");
+})
+
+$(".addToCart").click((event)=>{
+    var pid = '#' + event.target.parentElement.id;
+    console.log(pid);
+    $(pid).appendTo('.usercart');
 })
