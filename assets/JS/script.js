@@ -198,6 +198,20 @@ $('#cut').click(()=>{
 
 $(".addToCart").click((event)=>{
     var pid = '#' + event.target.parentElement.id;
-    console.log(pid);
-    $(pid).appendTo('.usercart');
+    $(event.target).remove();
+    $(pid).clone().appendTo('.usercart');
+
+    $(pid).children('.addedToCart').remove();
+    $(pid).removeAttr('id');
+    
+    $(pid).children(".addedToCart").css("color","red");
+})
+$('.bag').click(()=>{
+    $(".usercart").show();
+    $(".usercart").css("display","flex");
+    $('body').css("overflow","hidden");
+})
+$('#cut1').click(()=>{
+    $(".usercart").hide();
+    $('body').css("overflow","scroll");
 })

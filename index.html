@@ -50,6 +50,7 @@
         <i class="uil uil-times" id="cut"></i>
     </div>
     <div class="usercart">
+        <div class="heading flex"><span>Your Shopping Bag</span><i class="uil uil-times" id="cut1"></i></span></div>
     </div>
     <div class="mainpage">
         <header class="header">
@@ -148,7 +149,7 @@
                 <span>Recommended Dishes <span class="quantity"></span></span>
             </div>
             <div class="recommended-dishes flex">
-                <div class="box  link">
+                <div class="box  " id="VegNoodles">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/recommended/1.png" alt="Pizza">
                     </div>
@@ -160,8 +161,10 @@
                         <div class="rest">Kitchen Ette</div>
                         <div class="price">₹100/pl</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box" id="PaneerPizza">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/recommended/2.png" alt="Pizza">
                     </div>
@@ -173,8 +176,10 @@
                         <div class="rest">Dominoes</div>
                         <div class="price">₹220/p</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box "id="SpecialThali1">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/recommended/3.png" alt="Pizza">
                     </div>
@@ -186,8 +191,10 @@
                         <div class="rest">Punjabi Junction</div>
                         <div class="price">₹70/Pl</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box" id="hicagoBitesPizzeria">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/recommended/4.png" alt="Pizza">
                     </div>
@@ -199,8 +206,10 @@
                         <div class="rest">Pizza Hut</div>
                         <div class="price">₹200/1p</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box " id="Biryani">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/recommended/5.png" alt="Pizza">
                     </div>
@@ -212,6 +221,8 @@
                         <div class="rest">Birayni Point</div>
                         <div class="price">₹200/pl</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
             </div>
             <div class="food-categories" id="1">
@@ -238,9 +249,10 @@
                         <div class="rest">Kitchen Ette</div>
                         <div class="price">₹200/pl</div>
                     </div>
-                    <span class="addToCart">Add to Cart</span>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box " id="KadhayiPaneer">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/Indian-foods/kadhayi-paneer.png" alt="Pizza">
                     </div>
@@ -252,8 +264,10 @@
                         <div class="rest">Punjabi Junction</div>
                         <div class="price">₹220/pl</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box" id="PaneerRoll">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/Indian-foods/paneer-roll.png" alt="Pizza">
                     </div>
@@ -265,8 +279,10 @@
                         <div class="rest">Punjabi Junction</div>
                         <div class="price">₹70/pl</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box" id="SpecialChicken">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/Indian-foods/chicken2.png" alt="Pizza">
                     </div>
@@ -278,8 +294,10 @@
                         <div class="rest">Punjabi Junction</div>
                         <div class="price">₹300/pl</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box " id="Paratha">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/Indian-foods/paratha.png" alt="Pizza">
                     </div>
@@ -291,8 +309,10 @@
                         <div class="rest">Kitchen Ette</div>
                         <div class="price">₹25/p</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box " id="Samosa">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/Indian-foods/samosa.png" alt="Pizza">
                     </div>
@@ -304,8 +324,10 @@
                         <div class="rest">Kitchen Ette</div>
                         <div class="price">₹20/p</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box" id="specialthali">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/Indian-foods/Special-thali.png" alt="Pizza">
                     </div>
@@ -317,11 +339,13 @@
                         <div class="rest">Kitchen Ette</div>
                         <div class="price">₹90/p</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
                 
             </div>
             <div class="healthy-food flex">
-                <div class="box link">
+                <div class="box" id="Fruits1">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/healthy-foods/fruits1.png" alt="Pizza">
                     </div>
@@ -333,8 +357,10 @@
                         <div class="rest">Fruiter</div>
                         <div class="price">₹100/p</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box " id="Salad">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/healthy-foods/salad.png" alt="Pizza">
                     </div>
@@ -346,21 +372,25 @@
                         <div class="rest">Fruiter</div>
                         <div class="price">₹100/p</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box " id="Fruits5">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/healthy-foods/fruits2.png" alt="Pizza">
                     </div>
                     <div class="detail flex">
-                        <div class="name"><h3>Fruits4</h3></div>
+                        <div class="name"><h3>Fruits5</h3></div>
                         <div class="star">5<i class="uil uil-star"></i></div>
                     </div>
                     <div class="remdetail flex">
                         <div class="rest">Fruiter</div>
                         <div class="price">₹100/p</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box" id="Fruits3">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/healthy-foods/fruits3.png" alt="Pizza">
                     </div>
@@ -372,8 +402,10 @@
                         <div class="rest">Fruiter</div>
                         <div class="price">₹100/p</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box" id="Fruits4">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/healthy-foods/fruits4.png" alt="Pizza">
                     </div>
@@ -385,10 +417,12 @@
                         <div class="rest">Fruiter</div>
                         <div class="price">₹100/p</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
             </div>
             <div class="foreign-food flex">
-                <div class="box link">
+                <div class="box " id="Burger">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/foreign-foods/burger1.png" alt="Pizza">
                     </div>
@@ -400,8 +434,10 @@
                         <div class="rest">Sagar gaire</div>
                         <div class="price">₹120/p</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box" id="Burger1">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/foreign-foods/burger3.png" alt="Pizza">
                     </div>
@@ -413,8 +449,10 @@
                         <div class="rest">Patidar foods</div>
                         <div class="price">₹140/p</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box" id="Momos">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/foreign-foods/momos.png" alt="Pizza">
                     </div>
@@ -426,8 +464,10 @@
                         <div class="rest">Patidar foods</div>
                         <div class="price">₹70/p</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box" id="Noodles">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/foreign-foods/noodles1.png" alt="Pizza">
                     </div>
@@ -439,8 +479,10 @@
                         <div class="rest">Noodles Hub</div>
                         <div class="price">₹80/p</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box " id="Pizza">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/foreign-foods/pizza1.png" alt="Pizza">
                     </div>
@@ -452,8 +494,10 @@
                         <div class="rest">Pizza Hub</div>
                         <div class="price">₹100/p</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box" id="Pizza1">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/foreign-foods/pizza2.png" alt="Pizza">
                     </div>
@@ -465,8 +509,10 @@
                         <div class="rest">Pizza Hub</div>
                         <div class="price">₹100/p</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
-                <div class="box link">
+                <div class="box" id="Sandwich">
                     <div class="image">
                         <img loading="lazy" src="assets/Images/foreign-foods/sandwich.png" alt="Pizza">
                     </div>
@@ -478,6 +524,8 @@
                         <div class="rest">Pizza Hub</div>
                         <div class="price">₹100/p</div>
                     </div>
+                    <button class="addToCart">Add to Cart</button>
+                    <span class="addedToCart">Added to cart</span>
                 </div>
             </div>
             
