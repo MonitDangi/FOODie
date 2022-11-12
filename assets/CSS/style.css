@@ -6,7 +6,10 @@
     box-sizing: border-box;
 }
 
-
+a{
+    text-decoration: none;
+    color:black;
+}
 
 body{
     width:100vw;
@@ -304,7 +307,7 @@ header{
     gap:20px;
 }
 .col3 ul li{
-    font-size: 1.3em;
+    font-size: 2em;
     color:black;
 }
 .col3 ul li:hover{
@@ -493,7 +496,7 @@ header{
     box-shadow: 0 0 10px rgb(61, 61, 61);
 }
 .categories .carousel .dish span{
-    font-size:80px;
+    font-size:70px;
     font-weight: 700;
     color:white;
 }
@@ -588,46 +591,7 @@ header{
     font-weight: 800;
     letter-spacing: 0.1em;
 }
-@media screen and (max-width:580px) {
-    .nav{
-        display: none;
-    }
-    .openmenu{
-        font-size: 1.4rem;
-    }
-    .search{
-        margin-right:-20px;
-    }
-    .closemenu{
-        font-size: 1.4rem;
-        color:black;
-        display: none;
-    }
-    .container1{
-        height:270px;
-    } 
-    .container1 .flickity-viewport {
-        height:225px;
-    }
-    .container1 .carousel .carousel-cell img{
-        height:225px;
-    }
-    .container1 .flickity-page-dots{
-        margin-top:-25px;
-    }
-    .col3{
-        display: none;
-    }
-    .bag{
-        justify-content: center;
-        gap:5px;
-    }
-    .profile{
-        justify-content: center;
-        gap:5px;
-    }
-    
-}
+
 .food-categories{
     width:100%;
     height:70px;
@@ -711,21 +675,6 @@ header{
     border-radius: 99px;
     transition: all 0.25s ease-out;
 }
-
-@media screen and (min-width:581px) {
-    .container1{
-        height: 340px;
-    } 
-    .container1 .flickity-viewport {
-        height:300px;
-    }
-    .container1 .carousel .carousel-cell img{
-        height:300px;
-    }
-    .container1 .flickity-page-dots{
-        margin-top:0;
-    }
-}
 .flickity-viewport{
     background: rgb(225, 225, 226);
     background-image: url(../Images/backgrounds/blog-pattern-bg.png);
@@ -755,7 +704,7 @@ header{
 .indian-food::-webkit-scrollbar{
     display: none;
 }
-.indian-food .box{
+/* .indian-food .box{
     width:330px;
     height:300px;
     overflow: hidden;
@@ -787,7 +736,7 @@ header{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 800;
     letter-spacing: 0.1em;
-}
+} */
 
 .healthy-food{
     margin-top:64px;
@@ -805,7 +754,7 @@ header{
 .healthy-food::-webkit-scrollbar{
     display: none;
 }
-.healthy-food .box{
+/* .healthy-food .box{
     width:330px;
     height:300px;
     overflow: hidden;
@@ -814,8 +763,8 @@ header{
     padding:5px;
     border:1px solid red;
     box-shadow: 0 0 10px rgba(249, 1, 1, 0.3);
-}
-.healthy-food .box .image{
+} */
+/* .healthy-food .box .image{
     width:100%;
     height:70%;
 }
@@ -837,7 +786,7 @@ header{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 800;
     letter-spacing: 0.1em;
-}
+} */
 
 
 
@@ -857,7 +806,7 @@ header{
 .foreign-food::-webkit-scrollbar{
     display: none;
 }
-.foreign-food .box{
+/* .foreign-food .box{
     width:330px;
     height:300px;
     overflow: hidden;
@@ -889,13 +838,13 @@ header{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 800;
     letter-spacing: 0.1em;
-}
+} */
 .userprofile{
     width:600px;
     height:350px;
     background-color:#656565;
     margin-top:10%;
-    margin-left:30%;
+    margin-left:5%;
     position:fixed;
     z-index:20;
     justify-content: center;
@@ -907,7 +856,9 @@ header{
 .userprofile span{
     color:white;
     font-size:20px;
-    margin-bottom:30px;
+    margin-bottom:20px;
+    margin-top:9px;
+    margin-left:5px;
 
 }
 .userprofile i{
@@ -916,7 +867,7 @@ header{
 }
 .userprofile .putName, .userprofile .putEmail{
     color: red;
-    margin-top:12px;
+    margin-top:19px;
 }
 .userprofile img{
     margin-left:150px;
@@ -961,8 +912,8 @@ header{
     display: flex;
     position:fixed;
     overflow: scroll;
-    z-index:20;
-    padding:30px 30px;
+    z-index:12;
+    padding:100px 30px;
     border:3px solid black;
     display: none;
     flex-wrap: wrap;
@@ -1005,4 +956,179 @@ header{
     font-size:40px;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 600;
+}
+#counter{
+    width:120px;
+    height:30px;
+    padding-top:2px;
+    background-color: #929191;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border:1px solid red;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px rgb(246, 197, 197);
+    z-index: 13;
+}
+#counter i{
+    color:rgb(41, 40, 40);
+    font-size:25px;
+}
+#counter{
+    display: none;
+}
+.cart-value{
+    position:absolute;
+    width:auto;
+    padding:3px;
+    border-radius:10px;
+    font-size:13px;
+    color:red;
+    background-color: rgb(105, 103, 103);
+    margin-left:-15px;
+    margin-top:3px;
+    display: none;
+}
+@media screen and (max-width:581px) {
+    .nav{
+        display: none;
+    }
+    .openmenu{
+        font-size: 2rem;
+    }
+    .search{
+        margin-right:-20px;
+    }
+    .closemenu{
+        font-size: 2rem;
+        color:black;
+        display: none;
+    }
+    .container1{
+        height:270px;
+    } 
+    .container1 .flickity-viewport {
+        height:225px;
+    }
+    .container1 .carousel .carousel-cell img{
+        height:225px;
+    }
+    .container1 .flickity-page-dots{
+        margin-top:-25px;
+    }
+    .col3{
+        display: none;
+    }
+    .bag2{
+        justify-content: center;
+        gap:5px;
+    }
+    .profile2{
+        justify-content: center;
+        gap:5px;
+    }
+    .userprofile{
+        width:350px;
+        height:400px;
+        background-color:#656565;
+        margin-top:10%;
+        margin-left:0;
+        position:fixed;
+        z-index:20;
+        justify-content: left;
+        margin:auto;
+        border:3px solid black;
+        display: none;
+    }
+    .userprofile span{
+        color:white;
+        font-size:20px;
+        margin-top:9px;
+        margin-left:5px;
+    
+    }
+    .userprofile i{
+        font-size: 30px;
+        color: white;
+    }
+    .userprofile img{
+        margin-left:30px;
+        border-radius: 100px;
+        border:2px solid red;
+    }
+    .userprofile .putName, .userprofile .putEmail{
+        color: red;
+        margin-top:19px;
+    }
+    #cut{
+        font-size:50px;
+        margin-left:55px;
+        
+    }
+    .container1{
+        height: 340px;
+    } 
+    .container1 .flickity-viewport {
+        height:300px;
+    }
+    .container1 .carousel .carousel-cell img{
+        height:300px;
+    }
+    .container1 .flickity-page-dots{
+        margin-top:0;
+    }
+    .box{
+        width:200px;
+        height:200px;
+        overflow: hidden;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        padding:2.5px;
+        border:1px solid red;
+        box-shadow: 0 0 10px rgba(249, 1, 1, 0.3);
+    }
+    .box .image{
+        width:100%;
+        height:55%;
+    }
+    .box .image img{
+        width:100%;
+        height:100%;
+        border-radius:10px;
+    }
+    .box .detail{
+        justify-content: space-between;
+        margin:5px 0 0 0;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+    }
+    .box .remdetail{
+        justify-content: space-between;
+        margin:2.5px 0 0 0;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+    }
+    .recommended-dishes{
+        padding-top:50px;
+        gap:20px;
+        max-height:500px;
+        overflow-y: scroll;
+        padding-bottom:25px;
+    }
+    .recommended-heading span{
+        font-size:20px;
+    }
+    .box .detail{
+        font-size:15px;
+    }
+    .box .remdetail{
+        font-size:15px;
+    }
+    .cart-value{
+        position: relative;
+        margin-left:-10px;
+        background:transparent;
+    }
 }

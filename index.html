@@ -44,15 +44,16 @@
         </div>
     </div>
     <div class="userprofile">
-        <div class="username flex"><span><i class="uil uil-user"></i>Name</span><span class="putName"></span></div>
-        <div class="useremail flex"><span><i class="uil uil-envelope-alt"></i>Email</span><span class="putEmail"></span></div>
+        <div class="username flex"><span class="flex"><i class="uil uil-user"></i><span>Name</span></span><span class="putName"></span></div>
+        <div class="useremail flex"><span class="flex"><i class="uil uil-envelope-alt"></i><span>Email</span></span><span class="putEmail"></span></div>
         <img src="assets/Images/userimage.png" alt="userimage"><br>
         <i class="uil uil-times" id="cut"></i>
     </div>
-    <div class="usercart">
-        <div class="heading flex"><span>Your Shopping Bag</span><i class="uil uil-times" id="cut1"></i></span></div>
-    </div>
+    <div id="counter" class="flex"><i class="uil uil-minus-circle" id="minus"></i><span class="item-quantity">1</span><i class="uil uil-plus-circle" id="plus"></i></div>
     <div class="mainpage">
+        <div class="usercart">
+            <div class="heading flex"><span>Your Shopping Bag</span><i class="uil uil-times" id="cut1"></i></span></div>
+        </div>
         <header class="header">
             <nav class="navbar flex">
                 <div class="col1 flex">
@@ -75,19 +76,19 @@
                 </div>
                 <div class="col3 flex">
                     <ul class="flex list-none">
-                        <li class="bag"><i class="uil uil-shopping-bag"></i></li>
+                        <li class="bag"><i class="uil uil-shopping-bag"></i><span class="cart-value"></span></li>
                         <li class="profile"><i class="uil uil-user"></i></li>
                     </ul>
                 </div>
             </nav>
             <div class="nav2">
                 <ul class="flex list-none open">
-                    <li class="home link">Home</li>
-                    <li class="menu link">Menu</li>
-                    <li class="blog link">Blog</li>
-                    <li class="about link">About</li>
-                    <li class="bag link flex">Bag <i class="uil uil-shopping-bag"></i></li>
-                    <li class="profile link flex">Profile <i class="uil uil-user"></i></li>
+                    <li class="home2"><a href="#">Home</a></li>
+                    <li class="menu2"><a href="#1">Menu</a></li>
+                    <li class="blog2 link">Blog</li>
+                    <li class="about2 link">About</li>
+                    <li class="bag2 flex">Bag <i class="uil uil-shopping-bag"></i><span class="cart-value"></span></li>
+                    <li class="profile2 flex">Profile <i class="uil uil-user"></i></li>
                 </ul>
             </div>
         </header>
@@ -199,7 +200,7 @@
                         <img loading="lazy" src="assets/Images/recommended/4.png" alt="Pizza">
                     </div>
                     <div class="detail flex">
-                        <div class="name"><h3>Chicago Bites Pizzeria</h3></div>
+                        <div class="name"><h3>Chicago Bites</h3></div>
                         <div class="star">3.6<i class="uil uil-star"></i></div>
                     </div>
                     <div class="remdetail flex">
@@ -261,7 +262,7 @@
                         <div class="star">4.7<i class="uil uil-star"></i></div>
                     </div>
                     <div class="remdetail flex">
-                        <div class="rest">Punjabi Junction</div>
+                        <div class="rest">Punjabi Jn</div>
                         <div class="price">₹220/pl</div>
                     </div>
                     <button class="addToCart">Add to Cart</button>
@@ -276,7 +277,7 @@
                         <div class="star">4.7<i class="uil uil-star"></i></div>
                     </div>
                     <div class="remdetail flex">
-                        <div class="rest">Punjabi Junction</div>
+                        <div class="rest">Punjabi Jn</div>
                         <div class="price">₹70/pl</div>
                     </div>
                     <button class="addToCart">Add to Cart</button>
@@ -291,7 +292,7 @@
                         <div class="star">3.9<i class="uil uil-star"></i></div>
                     </div>
                     <div class="remdetail flex">
-                        <div class="rest">Punjabi Junction</div>
+                        <div class="rest">Punjabi Jn</div>
                         <div class="price">₹300/pl</div>
                     </div>
                     <button class="addToCart">Add to Cart</button>
@@ -535,6 +536,5 @@
     <script src="assets/JS/jquery-3.6.1.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="assets/JS/script.js"></script>
-
 </body>
 </html>

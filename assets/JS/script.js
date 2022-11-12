@@ -5,6 +5,7 @@ var username="user101";
 var email="noemail"
 let sendOTP;
 let x =0;
+var cart = 0;
 function generateOTP(){
     var digits = "0123456789";
     let OTP ='';
@@ -50,26 +51,26 @@ getOTP.click(()=>{
     console.log(email);
 
 
-//     Email.send({
-//         Host : "smtp.elasticemail.com",
-//         Username : "foodie2562@gmail.com",
-//         Password : "1944AEA57DDCDC6D41AFA92CB372DF217EAE",
-//         To : email,
-//         From : "foodie2562@gmail.com",
-//         Subject : esub, 
-//         Body : "Your OTP is "+ sendOTP +". Dont share it with anyone."
-//     }).then(
-//       message => {
-//         if(message == "OK"){
-//             alert("OTP Sent.")
-//             console.log(sendOTP);
-//         }
-//         else {
-//             alert(message);
-//             alert(sendOTP);
-//         }
-//       }
-//     );
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "foodie2562@gmail.com",
+        Password : "1944AEA57DDCDC6D41AFA92CB372DF217EAE",
+        To : email,
+        From : "foodie2562@gmail.com",
+        Subject : esub, 
+        Body : "Your OTP is "+ sendOTP +". Dont share it with anyone."
+    }).then(
+      message => {
+        if(message == "OK"){
+            alert("OTP Sent.")
+            console.log(sendOTP);
+        }
+        else {
+            alert(message);
+            alert(sendOTP);
+        }
+      }
+    );
     console.log(sendOTP);
 })
 
@@ -185,33 +186,70 @@ $('.foreign-container').click(()=>{
 $('.link').click(()=>{
     window.alert("Launching it soon")
 })
+
+
 $('.profile').click(()=>{
     $(".userprofile").show();
     $(".mainpage").addClass('blur');
     $('body').css("overflow","hidden");
 })
+$('.profile2').click(()=>{
+    $(".userprofile").show();
+    $(".mainpage").addClass('blur');
+    $('body').css("overflow","hidden");
+    nav.hide();
+    nav2.hide();
+    closemenu.hide();
+    openmenu.show();
+})
+
+
 $('#cut').click(()=>{
     $(".userprofile").hide();
     $(".mainpage").removeClass('blur');
     $('body').css("overflow","scroll");
 })
 
+
 $(".addToCart").click((event)=>{
+    $(document).replaceAll();
     var pid = '#' + event.target.parentElement.id;
     $(event.target).remove();
-    $(pid).clone().appendTo('.usercart');
-
-    $(pid).children('.addedToCart').remove();
-    $(pid).removeAttr('id');
-    
+    $('.usercart').append($(pid).clone());
+    $('.usercart').children(pid).attr("id",pid.substring(1)+"1");
+    $(pid+"1").append($('#counter').clone());
+    $(pid+"1").children('.addedToCart').remove();
+    $(pid+"1").children('#counter').css("display","flex");
+    $(pid+"1").children('#counter').css("margin","auto");
+    $(pid+"1").children('#counter').children('#plus').attr('id',"pl");
+    $(pid+"1").children('#counter').children('#minus').attr('id',"mi");
     $(pid).children(".addedToCart").css("color","red");
+    cart++;
+    $('.cart-value').text(cart);
+    $('.cart-value').show();
 })
+
+
 $('.bag').click(()=>{
     $(".usercart").show();
     $(".usercart").css("display","flex");
     $('body').css("overflow","hidden");
 })
+$('.bag2').click(()=>{
+    $(".usercart").show();
+    $(".usercart").css("display","flex");
+    $('body').css("overflow","hidden");
+    nav.hide();
+    nav2.hide();
+    closemenu.hide();
+    openmenu.show();
+})
+
+
 $('#cut1').click(()=>{
     $(".usercart").hide();
     $('body').css("overflow","scroll");
+})
+$('.usercart').children('.box').children('#counter').children("i").click(()=>{
+    console.log("hi");
 })
