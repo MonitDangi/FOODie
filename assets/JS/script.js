@@ -244,7 +244,16 @@ $('.bag2').click(()=>{
     closemenu.hide();
     openmenu.show();
 })
-
+$('.home2').click(()=>{
+    nav2.hide();
+    closemenu.hide();
+    openmenu.show();
+})
+$('.menu2').click(()=>{
+    nav2.hide();
+    closemenu.hide();
+    openmenu.show();
+})
 
 $('#cut1').click(()=>{
     $(".usercart").hide();
