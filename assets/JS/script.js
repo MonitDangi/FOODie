@@ -49,29 +49,29 @@ getOTP.click(()=>{
     sendOTP = generateOTP();
     var esub = "One Tine Password for FOODie login."
     console.log(email);
-
-
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "foodie2562@gmail.com",
-        Password : "1944AEA57DDCDC6D41AFA92CB372DF217EAE",
-        To : email,
-        From : "foodie2562@gmail.com",
-        Subject : esub, 
-        Body : "Your OTP is "+ sendOTP +". Dont share it with anyone."
-    }).then(
-      message => {
-        if(message == "OK"){
-            alert("OTP Sent.")
-            console.log(sendOTP);
-        }
-        else {
-            alert(message);
-            alert(sendOTP);
-        }
-      }
-    );
     console.log(sendOTP);
+
+
+    // Email.send({
+    //     Host : "smtp.elasticemail.com",
+    //     Username : "monitdangi2562@gmail.com",
+    //     Password : "032D6571E72113DBF39FAA22F21B41F0C4C9",
+    //     To : email,
+    //     From : "monitdangi2562@gmail.com",
+    //     Subject : esub, 
+    //     Body : "Your OTP is "+ sendOTP +". Dont share it with anyone."
+    // }).then(
+    //   message => {
+    //     if(message == "OK"){
+    //         alert("OTP Sent.")
+    //         console.log(sendOTP);
+    //     }
+    //     else {
+    //         alert(message);
+    //         alert(sendOTP);
+    //     }
+    //   }
+    // );
 })
 
 submit.click(()=>{
@@ -212,7 +212,6 @@ $('#cut').click(()=>{
 
 
 $(".addToCart").click((event)=>{
-    $(document).replaceAll();
     var pid = '#' + event.target.parentElement.id;
     $(event.target).remove();
     $('.usercart').append($(pid).clone());
@@ -258,7 +257,4 @@ $('.menu2').click(()=>{
 $('#cut1').click(()=>{
     $(".usercart").hide();
     $('body').css("overflow","scroll");
-})
-$('.usercart').children('.box').children('#counter').children("i").click(()=>{
-    console.log("hi");
 })

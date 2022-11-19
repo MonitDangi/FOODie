@@ -163,32 +163,11 @@ input{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+main{
+    position:absolute;
+    width:100%;
+    height:auto;
+}
 
 
 .mainpage{
@@ -519,6 +498,7 @@ header{
     color:white;
 }
 .recommended-heading{
+    position: absolute;
     width:100%;
     height:70px;
     justify-content: center;
@@ -549,7 +529,7 @@ header{
 .recommended-dishes{
     flex-wrap: wrap;
     justify-content: center;
-    padding-top:50px;
+    padding-top:110px;
     gap:80px;
     max-height:770px;
     overflow-y: scroll;
@@ -609,7 +589,7 @@ header{
     width:350px;
     margin:auto;
     display: flex;
-    position: relative;
+    position: absolute;
     background-color: #fff;
     box-shadow: 0 0  1px 0 rgba(#464647,0.15),0 6px 12px 0 rgba(#4d4d4e,0.15);
     padding:0.75rem;
@@ -897,6 +877,7 @@ header{
     margin-top:3px;
     display: none;
 }
+
 @media screen and (max-width:581px) {
     .nav{
         display: none;
